@@ -1,232 +1,311 @@
-* {box-sizing: border-box;}
-
-body {
-  margin: 0;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;;
+* {
+    box-sizing: border-box;
 }
-
-
-.topnav {
-  overflow: hidden;
-  background-color: #DEB887;
+ body {
+     margin: 0;
+     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    ;
+     background-color: #DEB887;
 }
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
+ .topnav {
+     overflow: hidden;
+     background-color: #DEB887;
+     border: 1px solid #FFCC99;
+}
+ .topnav a {
+     float: left;
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 16px;
+}
+ 
+ .topnav a.active {
+     background-color: #DEB887;
+     color: #8B4513;
+     border: 1px solid #FFCC99;
+}
+ .topnav a.active1 {
+     color: #8B4513;
+     background-color: #DEB887;
+     float: right;
+     border: 1px solid #FFCC99;
 }
 
 .topnav a:hover {
-  background-color: #FFFAFA;
+     background-color: #FFFAFA;
 }
 
-.topnav a.active {
-  background-color: #DEB887;
-  color: #8B4513;
+ .topnav .search-container {
+     float: right;
 }
-
-.topnav a.active1 {
-  color: #8B4513;
-  background-color: #DEB887;
-  float: right;
+ .topnav input[type=text] {
+     padding: 6px;
+     margin-top: 8px;
+     font-size: 17px;
+     border: none;
 }
-
-.topnav .search-container {
-  float: right;
+ .topnav .search-container button {
+     float: right;
+     padding: 6px 10px;
+     margin-top: 8px;
+     margin-right: 16px;
+     background: #ddd;
+     font-size: 17px;
+     border: none;
+     cursor: pointer;
 }
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+ .topnav .search-container button:hover {
+     background: #ccc;
 }
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+ @media screen and (max-width: 600px) {
+     .topnav .search-container {
+         float: none;
+    }
+     .topnav a, .topnav input[type=text], .topnav .search-container button {
+         float: none;
+         display: block;
+         text-align: left;
+         width: 100%;
+         margin: 0;
+         padding: 14px;
+    }
+     .topnav input[type=text] {
+         border: 1px solid #ccc;
+    }
 }
-
-.topnav .search-container button:hover {
-  background: #ccc;
+ .banner img {
+     max-width: 100%;
+     height: auto;
+     width: auto;
+     margin: auto;
+     display: block;
 }
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-
-
-.banner img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  margin: auto;
-  display: block;
-}
-
 /* end style header */
-
-
 /* Dropdown Button */
-.dropbtn {
-    background-color: #DEB887;
-    min-width: 300px;
-    color: #8B4513;
-    padding: 15px;
-    font-size: 16px;
-    border: none;
+ .dropbtn {
+     background-color: #DEB887;
+     min-width: 300px;
+     color: #8B4513;
+     padding: 15px;
+     font-size: 16px;
+     border: none;
+     border: 1px solid #FFCC99;
 }
-
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
+ .dropdown {
+     position: relative;
+     display: inline-block;
 }
-
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #DEB887;
-    min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #DEB887;
+     min-width: 300px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
 }
-
 /* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
 }
-
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #FFFAFA;
+ .dropdown-content a:hover {
+     background-color: #FFFAFA;
 }
-
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+ .dropdown:hover .dropdown-content {
+     display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+ .dropdown:hover .dropbtn {
+     background-color: #FFFAFA;
+}
+ .container-dropdown {
+     width: auto;
+     background-color: #DEB887;
+     border: 1px solid #FFCC99; 
+}
+/* Slideshow container */
+ .mySlides {
+    display: none
+}
+ img {
+    vertical-align: middle;
+}
+ .slideshow-container {
+     background-color: #DEB887;
+     max-width: auto;
+     position: relative;
+     margin: auto;
+}
+/* Next & previous buttons */
+ .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+ .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+}
+ .active, .dot:hover {
+     background-color: #717171;
+}
+/* Fading animation */
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+ @-webkit-keyframes fade {
+     from {
+        opacity: .4
+    }
+     to {
+        opacity: 1
+    }
+}
+ @keyframes fade {
+     from {
+        opacity: .4
+    }
+     to {
+        opacity: 1
+    }
+}
+/* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+     .prev, .next,.text {
+        font-size: 11px
+    }
+}
+ .footer p {
+     width: auto;
+     background-color: #DEB887;
+     text-align-last: center;
+     color: #8B4513;
+}
+/* thong tin lien he */
+ .panel-primary {
+     width: 800px;
+     height: 300px;
+     margin: 50px auto;
+     border: 2px solid #FFCC99  ;
+     border-radius: 15px;
+     
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #FFFAFA;
+  .panel-heading  {
+      margin-top: 30px;
+
 }
+
+.panel-heading, .panel-body {
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+}
+ .panel-primary, .panel-heading p {
+     color: #8B4513;
+
+}
+ 
+/*-------*/
+
+
 
 .container {
-  width: auto;
-  background-color: #DEB887;
+    width: 1000px;
+    height: auto;
+    margin:50px auto;
+    border: 2px solid #FFCC99;
+    border-radius: 15px;
+    padding: 15px;
 }
 
-/* Slideshow container */
-
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-
-.slideshow-container {
-  background-color: #DEB887;
-  max-width: auto;
-  position: relative;
-  margin: auto;
+hr {
+    width: 70%;
 }
 
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.heading {
+    
+    text-align: center;
+    color: #8B4513;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.img-book img {
+    width: 150px;
+    height: 230px;
 }
 
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.content div {
+    margin: 5px 40px 5px 40px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.img-book {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.thumbnail {
+    border: 1px solid #8B4513;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.text-book {
+    text-align: center;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.img-book img:hover {
+    opacity: 0.8;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.text-book a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #8B4513
 }
 
-.footer p {
-  width: auto;
-  background-color: #DEB887;
-  text-align-last: center;
+.img-book a:hover {
+    opacity: 0.5;
 }
