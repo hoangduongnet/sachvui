@@ -272,12 +272,12 @@ hr {
     padding: 15px;
     
 }
-
+/* fix ảnh*/
 .img-book img {
     width: 150px;
     height: 230px;
 }
-
+/*cách đều div*/
 .content div {
     margin: 5px 40px 5px 40px;
 }
